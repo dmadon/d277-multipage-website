@@ -1,0 +1,60 @@
+:root {
+    --color-1: white;
+    --color-2: #00bfff;
+    --color-3: #000271;
+    --color-4: #d90000;
+}
+
+
+@font-face {
+    font-family: DancingScript;
+    src: url(fonts/DancingScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: DancingScript;
+    src: url(fonts/DancingScript-Bold.ttf);
+    font-weight: bold;
+}
+
+* {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body { 
+    margin: 0;
+}
+
+#banner {
+    font-family: DancingScript, cursive;    
+    background-image: url("images/clouds.png");
+}
+
+#banner h1 {
+    font-size: 12rem;
+    text-shadow: 4px 4px black; 
+    color: var(--color-1);
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    background-color: var(--color-3);
+    font-size: 4em;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: var(--color-1);
+    height: 100%;
+    text-shadow: 2px 2px black; 
+}
+
+nav a:hover{
+    color: var(--color-4);
+
+}
