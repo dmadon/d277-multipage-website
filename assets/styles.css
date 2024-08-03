@@ -52,12 +52,13 @@ nav {
 nav a {
     color: var(--color-1);
     text-shadow: 2px 2px black;
+    text-decoration: none;
     transition: font-size .5s, padding .5s; 
     padding: 8px;    
 }
 
 nav a:hover{
-    color: var(--color-4);
+    color: var(--color-4);    
     font-size: 1.2em;
     padding: 0px;
 }
