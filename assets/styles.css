@@ -46,15 +46,18 @@ nav {
     font-size: 4em;
     text-align: center;
     justify-content: space-evenly;
+    
 }
 
 nav a {
     color: var(--color-1);
-    height: 100%;
-    text-shadow: 2px 2px black; 
+    text-shadow: 2px 2px black;
+    transition: font-size .5s, padding .5s; 
+    padding: 8px;    
 }
 
 nav a:hover{
     color: var(--color-4);
-
+    font-size: 1.2em;
+    padding: 0px;
 }
