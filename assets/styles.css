@@ -17,13 +17,50 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: EBGaramond;
+    src: url(fonts/EBGaramond-Regular.ttf);
+}
+
+@font-face {
+    font-family: EBGaramond;
+    src: url(fonts/EBGaramond-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: EBGaramond;
+    src: url(fonts/EBGaramond-Italic.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: EBGaramond;
+    src: url(fonts/EBGaramond-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+
 * {
     font-size: 100%;
     box-sizing: border-box;
 }
 
-body { 
+body{ 
     margin: 0;
+    font-family: EBGaramond, Georgia, "Times New Roman", serif;    
+}
+
+.section-head {
+    font-size: 3rem;
+}
+
+.subtitle {
+    font-size: 2rem;
+}
+
+p, ul, ol {
+    font-size: 1.5rem;
 }
 
 #banner {
@@ -37,13 +74,12 @@ body {
     color: var(--color-1);
     margin: 0;
     text-align: center;
-    padding: 20px;
 }
 
 nav {
     display: flex;
     background-color: var(--color-3);
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
     justify-content: space-evenly;
     
@@ -59,6 +95,45 @@ nav a {
 
 nav a:hover{
     color: var(--color-4);    
-    font-size: 1.2em;
+    font-size: 1.1em;
     padding: 0px;
+}
+
+.container { 
+    width: 70%;
+    margin: 0 auto;
+    background-color: var(--color-2);
+    overflow: auto;
+    clear: both;
+}
+
+main {
+    width: 80%;
+    background-color: lightgreen;
+    border: 5px solid blue;
+    float: left;
+}
+
+aside {
+    width: 20%;
+    float:right;
+    background-color: lightpink;
+    border: 5px solid blue;
+}
+
+
+
+
+/* some utility classes in case they are needed later */
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold-italic {
+    font-weight: bold;
+    font-style: italic;
 }
