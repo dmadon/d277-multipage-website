@@ -47,11 +47,10 @@
 }
 
 body{ 
-    min-height: 100vh;
     height: fit-content;
     margin: 0;
     font-family: EBGaramond, Georgia, "Times New Roman", serif;    
-    background-image: url(images/bluebonnets.png);
+    background-image: url(images/bluebonnets2.png);
     background-repeat: repeat-x;
     background-position: bottom left;
     overflow: auto;
@@ -66,7 +65,7 @@ body{
     font-size: 2rem;
 }
 
-p, ul, ol {
+p, li, .listtitle {
     font-size: 1.5rem;
 }
 
@@ -83,13 +82,16 @@ p, ul, ol {
     text-align: center;
 }
 
+#subregions{
+    float: right;
+}
+
 nav {
     display: flex;
     background-color: var(--color-3);
     font-size: 3em;
     text-align: center;
     justify-content: space-evenly;
-    
 }
 
 nav a {
@@ -108,6 +110,10 @@ nav a:hover{
 
 main {
     padding-bottom: 60px;
+}
+
+section {
+    overflow: auto;
 }
 
 .content {
@@ -177,3 +183,8 @@ footer p {
     display: table;
     clear: both;
 }
+
+.demo-border {
+    border: 5px solid magenta;
+}
+
