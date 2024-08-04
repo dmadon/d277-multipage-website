@@ -56,7 +56,7 @@ body{
     background-position: bottom left;
     overflow: auto;
     border: 5px solid red;
-    /* position: relative; */
+    position: relative;
 }
 
 .section-head {
@@ -108,6 +108,11 @@ nav a:hover{
 }
 
 main {
+    height: auto;
+    border: 5px solid magenta;
+}
+
+section {
     width: 70%;
     background-color: lightgreen;
     border: 5px solid blue;
@@ -130,7 +135,7 @@ aside ul {
 }
 
 footer {
-    /* position: absolute; */
+    position: absolute;
     width: 100%;
     bottom: 0px;
     color: var(--color-1);    
@@ -160,8 +165,8 @@ footer p {
     font-style: italic;
 }
 
-/* .clearfix::after {
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
-} */
+}
