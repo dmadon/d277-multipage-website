@@ -47,8 +47,16 @@
 }
 
 body{ 
+    min-height: 100vh;
+    height: fit-content;
     margin: 0;
     font-family: EBGaramond, Georgia, "Times New Roman", serif;    
+    background-image: url(images/bluebonnets.png);
+    background-repeat: repeat-x;
+    background-position: bottom left;
+    overflow: auto;
+    border: 5px solid red;
+    /* position: relative; */
 }
 
 .section-head {
@@ -110,12 +118,32 @@ main {
 aside {
     width: 20%;
     float: right;
-    background-image: url(images/bluebonnets.png);
     border: 5px solid blue;
     margin-right: 20px;
 }
 
+aside ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 2;
+    font-weight: bold;
+}
 
+footer {
+    /* position: absolute; */
+    width: 100%;
+    bottom: 0px;
+    color: var(--color-1);    
+    background-color: var(--color-3);    
+    clear: both;
+    border: 5px solid blue;
+    text-align: center;
+    margin: 0;
+}
+
+footer p {
+    margin: 12px auto;
+}
 
 
 /* some utility classes in case they are needed later */
@@ -131,3 +159,9 @@ aside {
     font-weight: bold;
     font-style: italic;
 }
+
+/* .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+} */
