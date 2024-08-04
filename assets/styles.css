@@ -55,11 +55,10 @@ body{
     background-repeat: repeat-x;
     background-position: bottom left;
     overflow: auto;
-    border: 5px solid red;
     position: relative;
 }
 
-.section-head {
+.pagetitle {
     font-size: 3rem;
 }
 
@@ -108,23 +107,28 @@ nav a:hover{
 }
 
 main {
-    height: auto;
-    border: 5px solid magenta;
+    padding-bottom: 60px;
 }
 
-section {
-    width: 70%;
-    background-color: lightgreen;
-    border: 5px solid blue;
+.content {
+    width: 55%;  
+    padding: 0 6px;
+    margin-top: 20px;
     margin-right: 20px;
+    margin-bottom: 200px;
     float: right;
 }
 
 aside {
-    width: 20%;
-    float: right;
-    border: 5px solid blue;
+    width: 25%;    
+    border: 5px solid var(--color-4);
+    border-radius: 12px;
+    box-shadow: -12px 12px 6px gray;
+    background-color: var(--color-1);
+    padding: 0 6px;
+    margin-top: 20px;
     margin-right: 20px;
+    float: right;
 }
 
 aside ul {
@@ -135,19 +139,22 @@ aside ul {
 }
 
 footer {
-    position: absolute;
-    width: 100%;
+    position: absolute;    
     bottom: 0px;
+    width: 100%;
     color: var(--color-1);    
     background-color: var(--color-3);    
-    clear: both;
-    border: 5px solid blue;
     text-align: center;
     margin: 0;
 }
 
 footer p {
     margin: 12px auto;
+}
+
+.references {
+    width: 80%;
+    margin: 0 auto;
 }
 
 
