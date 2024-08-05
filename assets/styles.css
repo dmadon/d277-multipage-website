@@ -3,6 +3,7 @@
     --color-2: #00bfff;
     --color-3: #000271;
     --color-4: #d90000;
+    --color-5: #fae098;
 }
 
 
@@ -47,6 +48,7 @@
 }
 
 body{ 
+    min-height: 100vh;
     height: fit-content;
     margin: 0;
     font-family: EBGaramond, Georgia, "Times New Roman", serif;    
@@ -82,6 +84,11 @@ p, li, .listtitle {
     text-align: center;
 }
 
+#banner a {
+    text-decoration: none;
+    color: var(--color-1);
+}
+
 #subregions{
     float: right;
 }
@@ -102,8 +109,12 @@ nav a {
     padding: 8px;    
 }
 
+nav a:visited {
+    color: var(--color-4);
+}
+
 nav a:hover{
-    color: var(--color-4);    
+    color: var(--color-5);    
     font-size: 1.1em;
     padding: 0px;
 }
@@ -161,6 +172,10 @@ footer p {
 .references {
     width: 80%;
     margin: 0 auto;
+}
+
+.reference-item {
+    padding-bottom: 20px;
 }
 
 
