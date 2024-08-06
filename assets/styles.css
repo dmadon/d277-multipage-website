@@ -178,6 +178,10 @@ footer p {
     padding-bottom: 20px;
 }
 
+section img {
+    float:right;
+}
+
 
 /* some utility classes in case they are needed later */
 .bold {
