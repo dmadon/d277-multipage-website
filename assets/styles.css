@@ -1,6 +1,6 @@
 :root {
     --color-1: white;
-    --color-2: #00bfff;
+    --color-2: #93e3fd;
     --color-3: #000271;
     --color-4: #d90000;
     --color-5: #fae098;
@@ -182,6 +182,30 @@ section img {
     float:right;
 }
 
+table {
+    margin: 0 auto;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+table tr th, table tr td {
+    font-size: 1.25rem;
+    border: 2px solid black;
+    /* width: 20%; */
+}
+table tr {
+    height: 50px;
+}
+
+table tr:nth-child(even) {
+    background-color: var(--color-2);
+}
+
+thead {
+    background-color: var(--color-3);
+    color: var(--color-1);
+}
 
 /* some utility classes in case they are needed later */
 .bold {
