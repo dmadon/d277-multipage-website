@@ -4,6 +4,7 @@
     --color-3: #000271;
     --color-4: #d90000;
     --color-5: #fae098;
+    --color-6: #6b0101;
 }
 
 
@@ -57,6 +58,7 @@ body{
     background-position: bottom left;
     overflow: auto;
     position: relative;
+    padding: 0;
 }
 
 .pagetitle {
@@ -106,14 +108,14 @@ nav a, footer a {
     text-shadow: 2px 2px black;
     text-decoration: none;
     transition: font-size .5s, padding .5s; 
-    padding: 8px;    
+    padding: 12px;    
 }
 
-nav a:visited, footer a {
+nav a:visited, footer a:visited {
     color: var(--color-4);
 }
 
-nav a:hover, footer a:hover{
+nav a:hover, footer a:hover {
     color: var(--color-5);    
     font-size: 1.1em;
     padding: 0px;
@@ -155,13 +157,18 @@ aside ul {
     font-weight: bold;
 }
 
+/* Footer is absolute positioned relative to body.
+To see its effect, please navigate to a page with very little content, such as contact.html, 
+in your web browser and comment out the "position" and "bottom" properties of the footer selector below. 
+You will probably not notice the change on pages with long content, due to the main page content being
+long enough to push the footer to the bottom of the page.*/
+
 footer {
     position: absolute;    
-    bottom: 0px;
+    bottom: 0px;  
     width: 100%;
     color: var(--color-1);    
     background-color: var(--color-3);    
-    /* text-align: center; */
     margin: 0;
     display: flex;
     justify-content: center;
@@ -212,6 +219,60 @@ table thead {
 table tbody {
     font-size: 1.25rem;
 }
+
+form p{
+    display: flex;
+    flex-direction: column;
+}
+
+#contactFields{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+label {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.flex20 {
+    flex: 0 1 20%;
+}
+
+.flex40 {
+    flex: 0 1 40%
+}
+
+textarea, input {
+    font-family: EBGaramond, Georgia, 'Times New Roman', serif;
+}
+
+input[type="submit"] {
+    width: 20%;
+    background-color: var(--color-3);
+    font-family: DancingScript, cursive;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: var(--color-1);
+    border-radius: 6px;
+    box-shadow: -4px 4px 4px gray;
+    padding: 12px;
+    margin: 0 auto;
+    transition: all .2s;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: var(--color-4);
+} 
+
+input[type="submit"]:active {
+    background-color: var(--color-6);
+    transform: translateX(2px) translateY(2px);
+} 
+
+
 
 /* some utility classes in case they are needed later */
 .bold {
