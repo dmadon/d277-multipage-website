@@ -101,7 +101,7 @@ nav {
     justify-content: space-evenly;
 }
 
-nav a {
+nav a, footer a {
     color: var(--color-1);
     text-shadow: 2px 2px black;
     text-decoration: none;
@@ -109,11 +109,11 @@ nav a {
     padding: 8px;    
 }
 
-nav a:visited {
+nav a:visited, footer a {
     color: var(--color-4);
 }
 
-nav a:hover{
+nav a:hover, footer a:hover{
     color: var(--color-5);    
     font-size: 1.1em;
     padding: 0px;
@@ -161,12 +161,14 @@ footer {
     width: 100%;
     color: var(--color-1);    
     background-color: var(--color-3);    
-    text-align: center;
+    /* text-align: center; */
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 footer p {
-    margin: 12px auto;
+    margin: 12px;
 }
 
 .references {
@@ -190,21 +192,25 @@ table {
 }
 
 table tr th, table tr td {
-    font-size: 1.25rem;
     border: 2px solid black;
-    /* width: 20%; */
 }
+
 table tr {
     height: 50px;
 }
 
-table tr:nth-child(even) {
+table tbody tr:nth-child(even) {
     background-color: var(--color-2);
 }
 
-thead {
+table thead {
+    font-size: 1.5rem;
     background-color: var(--color-3);
     color: var(--color-1);
+}
+
+table tbody {
+    font-size: 1.25rem;
 }
 
 /* some utility classes in case they are needed later */
