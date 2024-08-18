@@ -63,6 +63,7 @@ body{
 
 .pagetitle {
     font-size: 3rem;
+    margin-top: 0;
 }
 
 .subtitle {
@@ -79,7 +80,7 @@ p, li, .listtitle {
 }
 
 #banner h1 {
-    font-size: 12rem;
+    font-size: 8rem;
     text-shadow: 4px 4px black; 
     color: var(--color-1);
     margin: 0;
@@ -98,7 +99,7 @@ p, li, .listtitle {
 nav {
     display: flex;
     background-color: var(--color-3);
-    font-size: 3em;
+    font-size: 2.2em;
     text-align: center;
     justify-content: space-evenly;
 }
@@ -108,7 +109,7 @@ nav a, footer a {
     text-shadow: 2px 2px black;
     text-decoration: none;
     transition: font-size .5s, padding .5s; 
-    padding: 12px;    
+    padding: 8px;    
 }
 
 nav a:visited, footer a:visited {
@@ -134,7 +135,7 @@ section {
     padding: 0 6px;
     margin-top: 20px;
     margin-right: 20px;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
     float: right;
 }
 
@@ -158,9 +159,9 @@ aside ul {
 }
 
 /* Footer is absolute positioned relative to body.
-To see its effect, please navigate to a page with very little content, such as contact.html, 
-in your web browser and comment out the "position" and "bottom" properties of the footer selector below. 
-You will probably not notice the change on pages with long content, due to the main page content being
+The best way to see its effect, is to navigate to a page with very little content, such as contact.html, 
+in your web browser and comment out the "position" and "bottom" css properties of the footer selector below. 
+You will probably not notice the change on pages with long content, due to the main content being
 long enough to push the footer to the bottom of the page.*/
 
 footer {
@@ -223,6 +224,7 @@ table tbody {
 form p{
     display: flex;
     flex-direction: column;
+    margin-top: 0;
 }
 
 #contactFields{
@@ -232,20 +234,24 @@ form p{
 }
 
 label {
-    font-size: 1.2em;
     font-weight: bold;
 }
 
 .flex20 {
-    flex: 0 1 20%;
+    width: 25%;
 }
 
 .flex40 {
-    flex: 0 1 40%
+    width: 45%;
 }
 
 textarea, input {
     font-family: EBGaramond, Georgia, 'Times New Roman', serif;
+    font-size: .8em;
+}
+
+textarea {
+    max-width: 100%;
 }
 
 input[type="submit"] {
@@ -257,7 +263,7 @@ input[type="submit"] {
     color: var(--color-1);
     border-radius: 6px;
     box-shadow: -4px 4px 4px gray;
-    padding: 12px;
+    padding: 6px;
     margin: 0 auto;
     transition: all .2s;
 }
@@ -272,20 +278,11 @@ input[type="submit"]:active {
     transform: translateX(2px) translateY(2px);
 } 
 
-
-
-/* some utility classes in case they are needed later */
-.bold {
+.alertMessage {
+    color: var(--color-4);
+    font-size: .6em;
     font-weight: bold;
-}
-
-.italic {
-    font-style: italic;
-}
-
-.bold-italic {
-    font-weight: bold;
-    font-style: italic;
+    display: none;
 }
 
 .clearfix::after {
@@ -293,8 +290,3 @@ input[type="submit"]:active {
     display: table;
     clear: both;
 }
-
-.demo-border {
-    border: 5px solid magenta;
-}
-
