@@ -227,22 +227,19 @@ form p{
     margin-top: 0;
 }
 
-#contactFields{
+.contactFields{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    /* flex-wrap: wrap; */
 }
 
 label {
     font-weight: bold;
 }
 
-.flex20 {
-    width: 25%;
-}
-
-.flex40 {
-    width: 45%;
+.flex48 {
+    width: 48%;
 }
 
 textarea, input {
@@ -283,6 +280,10 @@ input[type="submit"]:active {
     font-size: .6em;
     font-weight: bold;
     display: none;
+}
+
+#emailCompareAlert {
+    text-align: center;
 }
 
 .clearfix::after {

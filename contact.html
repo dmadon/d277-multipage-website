@@ -36,24 +36,35 @@
             </section>
 
             <form id="contactForm">
-                <div id="contactFields">
-                    <p class="flex20">
+                <div class="contactFields">
+                    <p class="flex48">
                         <label for="firstName">First Name:</label>
                         <input type="text" id="firstName" name="firstName" placeholder="first name">
                         <span id="firstNameAlert" class="alertMessage">First name must contain at least two characters.</span>
                     </p>
-                    <p class="flex20">
+                    <p class="flex48">
                         <label for="lastName">Last Name:</label>
                         <input type="text" id="lastName" name="lastName" placeholder="last name">
                         <span id="lastNameAlert" class="alertMessage">Last name must contain at least two characters.</span>
                     </p>
-                    <p class="flex40">
+                </div>
+                <div class="contactFields">
+                    <p class="flex48">
                         <label for="email">Email Address:</label>
                         <input type="email" id="email" name="email" placeholder="email address">
                         <span id="emailAlert" class="alertMessage">Email format: __@___.__</span>
                     </p>
+                    <p class="flex48">
+                        <label for="email2">Confirm Email Address:</label>
+                        <input type="email" id="email2" name="email2" placeholder="confirm email address">
+                        <span id="email2Alert" class="alertMessage">Email format: __@___.__</span>
+                    </p>
                 </div>
 
+                <p>
+                    <span id="emailCompareAlert" class="alertMessage">Email Addresses Must Match</span>
+                </p>
+                
                 <p>
                     <label for="message">Your Message:</label>
                     <textarea id="message" name="message" rows="2" cols="50" placeholder="your message here"></textarea>

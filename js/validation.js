@@ -2,10 +2,13 @@ let contactForm = document.getElementById("contactForm");
 let firstName = document.getElementById("firstName");
 let lastName = document.getElementById("lastName");
 let email = document.getElementById("email");
+let email2 = document.getElementById("email2");
 let message = document.getElementById("message");
 let firstNameAlert = document.getElementById("firstNameAlert");
 let lastNameAlert = document.getElementById("lastNameAlert");
 let emailAlert = document.getElementById("emailAlert");
+let email2Alert = document.getElementById("email2Alert");
+let emailCompareAlert = document.getElementById("emailCompareAlert");
 let messageAlert = document.getElementById("messageAlert");
 
 // set initial status for all form fields
@@ -21,6 +24,7 @@ let emailValidator = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-
 firstName.addEventListener("input", validateFirstName);
 lastName.addEventListener("input", validateLastName);
 email.addEventListener("input", validateEmail);
+email2.addEventListener("input", validateEmail);
 message.addEventListener("input", validateMessage);
 contactForm.addEventListener("submit", validateForm);
 
@@ -62,7 +66,36 @@ function validateEmail(event){
         emailAlert.style.display = "none";
         validEmail = true;
     }
+
+    if(!email2.value.match(emailValidator)){
+        email2.style.backgroundColor = "pink";
+        email2Alert.style.display = "inline";
+        validEmail = false;
+    }
+    else{
+        email2.style.backgroundColor = "transparent";
+        email2Alert.style.display = "none";
+        validEmail = true;
+    }
+
+    if(email.value != email2.value){
+        emailCompareAlert.style.display = "inline";
+        validEmail = false;
+    }
+    else{
+        emailCompareAlert.style.display = "none";
+        validEmail = true;
+    }
+
+
+
+
 };
+
+// function compareEmails(event){
+
+
+// }
 
 function validateMessage(event){
     if(message.value.length < 2){
@@ -84,5 +117,6 @@ function validateForm(event){
         validateLastName();
         validateEmail();
         validateMessage();
+        // compareEmails();
     }
 };
